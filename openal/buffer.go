@@ -179,7 +179,7 @@ func NewBuffer() Buffer {
 // Delete() deletes a single buffer.
 // Convenience function, see DeleteBuffers().
 func (self Buffer) Delete() {
-	C.walDeleteSource(C.ALuint(self))
+	C.walDeleteBuffer(C.ALuint(self))
 }
 
 // GetFrequency() returns the frequency, in Hz, of the buffer's sample data.

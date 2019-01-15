@@ -26,7 +26,9 @@ package openal
 ALCdevice *walcOpenDevice(const char *devicename) {
 	return alcOpenDevice(devicename);
 }
+#if !defined(_WIN32)
 const ALCchar *alcGetString( ALCdevice *device, ALCenum param );
+#endif
 void walcGetIntegerv(ALCdevice *device, ALCenum param, ALCsizei size, void *data) {
 	alcGetIntegerv(device, param, size, data);
 }
