@@ -3,7 +3,7 @@ package openal_test
 import (
 	"testing"
 
-	"github.com/PucklaJ/go-openal/openal"
+	"github.com/jakdaniels/go-openal/openal"
 )
 
 func TestGetVendor(t *testing.T) {
