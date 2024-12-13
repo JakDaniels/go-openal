@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/PucklaJ/go-openal/openal"
+	"github.com/jakdaniels/go-openal/openal"
 )
 
 func ExamplePlay() {
